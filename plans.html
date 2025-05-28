@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тарифні плани - МС Сервіс</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><a href="index.html">МС Сервіс</a></h1>
+            </div>
+            <div class="burger-menu" id="burgerMenu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="services.html">Опис послуг</a></li>
+                    <li class="current"><a href="plans.html">Тарифні плани</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="main-content">
+        <div class="container">
+            <h1>Оберіть свій ідеальний план</h1>
+            <p style="text-align: center; max-width: 700px; margin-left:auto; margin-right:auto;">Ми пропонуємо кілька варіантів підписки, щоб кожен міг знайти оптимальний для себе. Усі платні підписки діють обмежений час і потребують подовження.</p>
+
+            <div class="plans">
+                <div class="plan">
+                    <h3>Безкоштовний доступ</h3>
+                    <p class="price">0 грн/міс</p>
+                    <ul>
+                        <li>Доступ до обмеженої бібліотеки треків</li>
+                        <li>Прослуховування з рекламою (якщо передбачено)</li>
+                        <li>Стандартна якість звуку</li>
+                    </ul>
+                    <a href="#" class="button button-secondary">Зареєструватися</a>
+                </div>
+
+                <div class="plan popular"> <h3>Підписка A</h3>
+                    <p class="price">99 грн/міс</p>
+                    <ul>
+                        <li>Доступ до треків рівня A</li>
+                        <li>Без реклами</li>
+                        <li>Висока якість звуку</li>
+                        <li>Офлайн-прослуховування</li>
+                    </ul>
+                    <a href="#" class="button">Обрати План A</a>
+                </div>
+
+                <div class="plan">
+                     <h3>Підписка B</h3>
+                    <p class="price">149 грн/міс</p>
+                    <ul>
+                        <li>Доступ до треків рівнів A і B</li>
+                        <li>Включає всі переваги Підписки A</li>
+                        <li>Доступ до ексклюзивних треків рівня B</li>
+                        <li>Найвища якість звуку</li>
+                    </ul>
+                    <a href="#" class="button">Обрати План B</a>
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 40px; font-size: 16px; color: #555;">Для доступу до будь-якого прослуховування, включаючи безкоштовні треки, необхідна реєстрація на сайті.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>МС Сервіс &copy; 2025</p>
+    </footer>
+
+    <script>
+        const burgerMenu = document.getElementById('burgerMenu');
+        const mainNav = document.getElementById('mainNav');
+
+        burgerMenu.addEventListener('click', () => {
+            mainNav.classList.toggle('active');
+            burgerMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

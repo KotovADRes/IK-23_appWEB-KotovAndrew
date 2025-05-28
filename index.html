@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>МС Сервіс - Головна</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><a href="index.html">МС Сервіс</a></h1>
+            </div>
+            <div class="burger-menu" id="burgerMenu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <nav id="mainNav">
+                <ul>
+                    <li class="current"><a href="index.html">Головна</a></li>
+                    <li><a href="services.html">Опис послуг</a></li>
+                    <li><a href="plans.html">Тарифні плани</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="hero-main"> <div class="container">
+            <h1>Відкрийте світ музики без меж</h1>
+            <p>Наш сервіс пропонує тисячі треків на будь-який смак. Слухайте улюблену музику будь-де та будь-коли. Приєднуйтесь до нас та насолоджуйтесь якісним звуком та ексклюзивним контентом.</p>
+            <p>Ми пропонуємо як безкоштовний доступ до великої колекції треків, так і преміум-підписки з розширеними можливостями та доступом до ексклюзивних композицій рівнів A та B.</p>
+            <a href="plans.html" class="button">Обрати тариф</a>
+            <a href="#" class="button button-secondary">Зареєструватися</a>
+        </div>
+    </section>
+
+    <section class="main-content">
+        <div class="container">
+            <h1>Чому обирають нас?</h1>
+            <div class="features">
+                <div class="feature-item">
+                    <img src="images/icon-library.svg" alt="Велика бібліотека" class="feature-icon"> <h3>Величезна бібліотека</h3>
+                    <p>Мільйони треків різних жанрів, що постійно оновлюються.</p>
+                </div>
+                <div class="feature-item">
+                    <img src="images/icon-quality.svg" alt="Висока якість звуку" class="feature-icon"> <h3>Висока якість</h3>
+                    <p>Кришталево чисте звучання для найкращого аудіодосвіду.</p>
+                </div>
+                <div class="feature-item">
+                    <img src="images/icon-devices.svg" alt="Доступ на пристроях" class="feature-icon"> <h3>Доступність</h3>
+                    <p>Слухайте улюблену музику на комп'ютері, смартфоні чи планшеті.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>МС Сервіс &copy; 2025</p>
+    </footer>
+
+    <script>
+        const burgerMenu = document.getElementById('burgerMenu');
+        const mainNav = document.getElementById('mainNav');
+
+        burgerMenu.addEventListener('click', () => {
+            mainNav.classList.toggle('active');
+            burgerMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

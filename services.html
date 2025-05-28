@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Опис послуг - МС Сервіс</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page-services"> <header>
+        <div class="container">
+            <div id="branding">
+                 <h1><a href="index.html">МС Сервіс</a></h1>
+            </div>
+            <div class="burger-menu" id="burgerMenu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html">Головна</a></li>
+                    <li class="current"><a href="services.html">Опис послуг</a></li>
+                    <li><a href="plans.html">Тарифні плани</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="main-content">
+        <div class="container">
+            <h1>Що ми пропонуємо</h1>
+            <p style="text-align: center; max-width: 700px; margin-left:auto; margin-right:auto;">Наш музичний сервіс створений для справжніх поціновувачів музики. Ми надаємо широкий спектр можливостей для комфортного прослуховування ваших улюблених виконавців.</p>
+            
+            <h2>Величезна бібліотека треків</h2>
+            <p>Отримуйте доступ до мільйонів композицій різних жанрів. Наша колекція включає як популярні хіти, так і ексклюзивні треки, доступні лише на нашій платформі. Каталог постійно оновлюється.</p>
+
+            <h2>Рівні доступу та підписки</h2>
+            <p>Ми пропонуємо гнучку систему доступу. Частина треків доступна всім зареєстрованим користувачам безкоштовно. Для доступу до преміум-контенту передбачені підписки:</p>
+            <ul>
+                <li><strong>Підписка A:</strong> Відкриває доступ до великої колекції треків рівня A.</li>
+                <li><strong>Підписка B:</strong> Надає повний доступ до всіх треків, включаючи рівні A та ексклюзивні треки рівня B.</li>
+            </ul>
+
+            <h2>Висока якість звуку</h2>
+            <p>Насолоджуйтесь кришталево чистим звучанням. Ми дбаємо про те, щоб ви отримували найкращий аудіодосвід.</p>
+
+            <h2>Прослуховування без обмежень</h2>
+            <p>З активною підпискою ви можете слухати музику без будь-яких обмежень за часом або кількістю прослуховувань, відповідно до вашого тарифного плану.</p>
+            
+            <h2>Доступ з будь-яких пристроїв</h2>
+            <p>Слухайте музику на комп'ютері, смартфоні або планшеті. Наш сервіс адаптований для комфортного використання на різних платформах.</p>
+
+            <div style="text-align: center; margin-top: 30px;">
+                 <a href="plans.html" class="button">Переглянути тарифні плани</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>МС Сервіс &copy; 2025</p>
+    </footer>
+
+    <script>
+        const burgerMenu = document.getElementById('burgerMenu');
+        const mainNav = document.getElementById('mainNav');
+
+        burgerMenu.addEventListener('click', () => {
+            mainNav.classList.toggle('active');
+            burgerMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
